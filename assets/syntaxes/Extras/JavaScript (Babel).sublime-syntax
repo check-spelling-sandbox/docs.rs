@@ -178,7 +178,7 @@ contexts:
         1: punctuation.definition.tag.js
         2: entity.name.tag.js
   expression:
-    - include: merge-conflits
+    - include: merge-conflicts
     - include: literal-regexp
     - include: literal-jsx
     - include: es7-decorators
@@ -1157,7 +1157,7 @@ contexts:
         1: variable.other.property.js
     - match: '[_$a-zA-Z][$\w]*'
       scope: variable.other.readwrite.js
-  merge-conflits:
+  merge-conflicts:
     - match: '^([<]{7})\s(.+)$'
       captures:
         1: invalid.illegal.conflict-marker.merge-into.js
