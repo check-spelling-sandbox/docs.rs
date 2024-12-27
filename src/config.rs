@@ -41,7 +41,7 @@ pub struct Config {
     pub(crate) github_accesstoken: Option<String>,
     pub(crate) github_updater_min_rate_limit: u32,
 
-    // Gitlab authentication
+    // GitLab authentication
     pub(crate) gitlab_accesstoken: Option<String>,
 
     // Access token for APIs for crates.io (careful: use

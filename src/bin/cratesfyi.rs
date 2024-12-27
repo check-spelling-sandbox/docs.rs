@@ -545,10 +545,10 @@ enum DatabaseSubcommand {
     /// temporary command to update the `crates.latest_version_id` field
     UpdateLatestVersionId,
 
-    /// Updates GitHub/Gitlab stats for crates.
+    /// Updates GitHub/GitLab stats for crates.
     UpdateRepositoryFields,
 
-    /// Backfill GitHub/Gitlab stats for crates.
+    /// Backfill GitHub/GitLab stats for crates.
     BackfillRepositoryStats,
 
     /// Updates info for a crate from the registry's API
