@@ -4681,7 +4681,7 @@ function_call_tests() ->
 %                    ^ punctuation.section.arguments.end.erlang
 %                     ^ punctuation.separator.expressions.erlang
 
-% don't match macro names as builin functions
+% don't match macro names as builtin functions
 
     ?FUNC(X),
 %  ^ - meta.function-call - meta.path
