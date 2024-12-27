@@ -132,7 +132,7 @@ impl Config {
             ("CRATESFYI_RUSTWIDE_WORKSPACE", "DOCSRS_RUSTWIDE_WORKSPACE"),
             ("DOCS_RS_DOCKER", "DOCSRS_DOCKER"),
             ("DOCS_RS_LOCAL_DOCKER_IMAGE", "DOCSRS_DOCKER_IMAGE"),
-            ("DOCS_RS_BULID_CPU_LIMIT", "DOCSRS_BULID_CPU_LIMIT"),
+            ("DOCS_RS_BUILD_CPU_LIMIT", "DOCSRS_BUILD_CPU_LIMIT"),
         ];
         for (old_var, new_var) in old_vars {
             if std::env::var(old_var).is_ok() {
