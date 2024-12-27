@@ -25,7 +25,7 @@
         { "trigger": "optional\tstandard header (since c++17)", "contents": "optional" }, // (since C++17) std::optional class template
         { "trigger": "variant\tstandard header (since c++17)", "contents": "variant" }, // (since C++17) std::variant class template
 
-        // Dynmamic memory management utilities
+        // Dynamic memory management utilities
         { "trigger": "new\tstandard header", "contents": "new" }, // Low-level memory management utilities
         { "trigger": "memory\tstandard header", "contents": "memory" }, // Higher level memory management utilities
         { "trigger": "scoped_allocator\tstandard header (since c++11)", "contents": "scoped_allocator" }, // (since C++11) Nested allocator class
