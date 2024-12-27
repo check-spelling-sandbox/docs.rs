@@ -28,7 +28,7 @@ pub enum CachePolicy {
     /// cache for a short time in the browser & CDN.
     /// right now: one minute.
     /// Can be used when the content can be a _little_ outdated,
-    /// while protecting agains spikes in traffic.
+    /// while protecting against spikes in traffic.
     ShortInCdnAndBrowser,
     /// cache forever in browser & CDN.
     /// Valid when you have hashed / versioned filenames and every rebuild would
