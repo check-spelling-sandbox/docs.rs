@@ -443,10 +443,10 @@ class Unittest(unittest.TestCase):
     def test_simple_completion(self):
         # <tr><td class="a">td.class</td></tr>
         view = Unittest.View()
-        completor = HtmlTagCompletions()
+        completer = HtmlTagCompletions()
 
         # simulate typing 'tab' at the start of the line, it is outside a tag
-        completion_list, flags = completor.get_completions(view, 'tab', [0], False)
+        completion_list, flags = completer.get_completions(view, 'tab', [0], False)
 
         # should give a bunch of tags that starts with t
         self.assertEqual(completion_list[0], ('table\tTag', '<table>$0</table>'))
@@ -457,10 +457,10 @@ class Unittest(unittest.TestCase):
     def test_inside_tag_completion(self):
         # <tr><td class="a">td.class</td></tr>
         view = Unittest.View()
-        completor = HtmlTagCompletions()
+        completer = HtmlTagCompletions()
 
         # simulate typing 'h' after <tr><, i.e. <tr><h
-        completion_list, flags = completor.get_completions(view, 'h', [6], True)
+        completion_list, flags = completer.get_completions(view, 'h', [6], True)
 
         # should give a bunch of tags that starts with h, and without <
         self.assertEqual(completion_list[0], ('head\tTag', 'head>$0</head>'))
@@ -470,7 +470,7 @@ class Unittest(unittest.TestCase):
         self.assertEqual(flags, sublime.INHIBIT_WORD_COMPLETIONS | sublime.INHIBIT_EXPLICIT_COMPLETIONS)
 
         # simulate typing 'he' after <tr><, i.e. <tr><he
-        completion_list, flags = completor.get_completions(view, 'he', [7], True)
+        completion_list, flags = completer.get_completions(view, 'he', [7], True)
 
         # should give a bunch of tags that starts with h, and without < (it filters only on the first letter of the prefix)
         self.assertEqual(completion_list[0], ('head\tTag', 'head>$0</head>'))
@@ -482,10 +482,10 @@ class Unittest(unittest.TestCase):
     def test_inside_tag_no_completion(self):
         # <tr><td class="a">td.class</td></tr>
         view = Unittest.View()
-        completor = HtmlTagCompletions()
+        completer = HtmlTagCompletions()
 
         # simulate typing 'h' after <tr><td , i.e. <tr><td h
-        completion_list, flags = completor.get_completions(view, 'h', [8], True)
+        completion_list, flags = completer.get_completions(view, 'h', [8], True)
 
         # should give nothing, but disable word based completions, since it is inside a tag
         self.assertEqual(completion_list, [])
@@ -494,10 +494,10 @@ class Unittest(unittest.TestCase):
     def test_expand_tag_attributes(self):
         # <tr><td class="a">td.class</td></tr>
         view = Unittest.View()
-        completor = HtmlTagCompletions()
+        completer = HtmlTagCompletions()
 
         # simulate typing tab after td.class
-        completion_list, flags = completor.get_completions(view, '', [26], False)
+        completion_list, flags = completer.get_completions(view, '', [26], False)
 
         # should give just one completion, and suppress word based completion
         self.assertEqual(completion_list, [('td.class', '<td class="class">$1</td>$0')])
