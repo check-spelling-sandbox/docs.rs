@@ -1626,7 +1626,7 @@ EOT
 # ^^^^^^^^^^^^^^ meta.function-call.perl
 # ^^ support.function.perl
 #   ^ punctuation.section.generic.begin.perl
-#    ^^^^ meta.string.perl string.unquoted.perl - bariable
+#    ^^^^ meta.string.perl string.unquoted.perl - variable
 #        ^^^^ meta.string.perl meta.interpolation.perl variable.other.readwrite.perl - string
 #            ^^ meta.string.perl string.unquoted.perl - variable
 #              ^ punctuation.section.generic.end.perl
