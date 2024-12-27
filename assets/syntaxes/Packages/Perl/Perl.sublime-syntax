@@ -1154,7 +1154,7 @@ contexts:
     - match: \.=?
       scope: keyword.operator.concat.perl
       push: expressions-begin
-    # string concation
+    # string repetition
     #  "string" x 10
     - match: \bx{{break}}
       scope: keyword.operator.arithmetic.perl
