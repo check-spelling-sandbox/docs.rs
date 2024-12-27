@@ -170,7 +170,7 @@ impl MatchedRelease {
         }
     }
 
-    /// Canonicalize the the version from the request
+    /// Canonicalize the version from the request
     ///
     /// Mainly:
     /// * "newest"/"*" or empty -> "latest" in the URL
