@@ -542,7 +542,7 @@ enum DatabaseSubcommand {
         version: Option<i64>,
     },
 
-    /// temporary commant to update the `crates.latest_version_id` field
+    /// temporary command to update the `crates.latest_version_id` field
     UpdateLatestVersionId,
 
     /// Updates Github/Gitlab stats for crates.
