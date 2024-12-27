@@ -154,7 +154,7 @@ contexts:
   commit-subject:
     - meta_scope: meta.commit.git.rebase
     - include: line-end
-    - match: (?=\S)  # subject beginns with first none whitespece
+    - match: (?=\S)  # subject begins with first none whitespece
       set:
         - meta_scope: meta.commit.git.rebase
         - meta_content_scope: meta.subject.git.commit
