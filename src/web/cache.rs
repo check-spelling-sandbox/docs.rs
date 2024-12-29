@@ -39,7 +39,7 @@ pub enum CachePolicy {
     /// this, for example after building a crate.
     /// Example usage: `/latest/` rustdoc pages and their redirects.
     ForeverInCdn,
-    /// cache forver in the CDN, but allow stale content in the browser.
+    /// cache forever in the CDN, but allow stale content in the browser.
     /// Example: rustdoc pages with the version in their URL.
     /// A browser will show the stale content while getting the up-to-date
     /// version from the origin server in the background.
