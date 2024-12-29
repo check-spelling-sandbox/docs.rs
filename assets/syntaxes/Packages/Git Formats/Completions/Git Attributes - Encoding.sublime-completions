@@ -31,12 +31,12 @@
         {"trigger": "Windows 1258\tVietnamese", "contents": "windows-1258"},
         {"trigger": "big5\tChinese Traditional", "contents": "gb2312"},
         {"trigger": "CP 437\tDOS", "contents": "cp-437"},
-        {"trigger": "euc_jp\tJapaneese", "contents": "euc_jp"},
+        {"trigger": "euc_jp\tJapanese", "contents": "euc_jp"},
         {"trigger": "euc_kr\tKorean", "contents": "euc_kr"},
         {"trigger": "gb2312\tChinese Simplified", "contents": "gb2312"},
         {"trigger": "KOI8-R\tCyrillic", "contents": "koi8-r"},
         {"trigger": "KOI8-U\tCyrillic", "contents": "koi8-u"},
         {"trigger": "Mac Roman\tWestern", "contents": "mac-roman"},
-        {"trigger": "Shift_JIS\tJapaneese", "contents": "Shift_JIS"},
+        {"trigger": "Shift_JIS\tJapanese", "contents": "Shift_JIS"},
     ]
 }
