@@ -2,7 +2,7 @@
 ---
 name: Git Log
 file_extensions:
-  - gitlog   # no real extention but why not?
+  - gitlog   # no real extension but why not?
 first_line_match: ^commit\s+\h{7,}
 scope: text.git.log
 
