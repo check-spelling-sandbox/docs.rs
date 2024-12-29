@@ -1300,7 +1300,7 @@ mod test {
     }
 
     #[test]
-    fn test_long_relaase_version() {
+    fn test_long_release_version() {
         async_wrapper(|env| async move {
             let mut conn = env.async_db().await.async_conn().await;
 
