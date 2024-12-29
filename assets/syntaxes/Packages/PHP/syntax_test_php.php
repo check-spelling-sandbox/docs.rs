@@ -627,14 +627,14 @@ if ($foo instanceof \Mynamespace\ClassName) {
 //                               ^^^^^^^^^ support.class
 }
 
-$var = new \MyNamespce\ClassName();
+$var = new \MyNamespace\ClassName();
 // <- variable.other
 //     ^ keyword.other
-//         ^^^^^^^^^^^^^^^^^^^^^ meta.path
+//         ^^^^^^^^^^^^^^^^^^^^^^ meta.path
 //         ^ punctuation.separator.namespace
 //          ^ support.other.namespace
-//                    ^ punctuation.separator.namespace
-//                     ^ support.class
+//                     ^ punctuation.separator.namespace
+//                      ^ support.class
 
 \MyNamespace\Foo::BAR;
 // <- punctuation.separator.namespace
