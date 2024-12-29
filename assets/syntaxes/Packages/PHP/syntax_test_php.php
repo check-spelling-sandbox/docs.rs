@@ -222,7 +222,7 @@ $var = function(array $ar=array(), ClassName $cls) use ($var1, $var2) {
 };
 // <- meta.function meta.block punctuation.section.block.end
 
-function foo(?stinrg ...$args) {}
+function foo(?string ...$args) {}
 //           ^ storage.type.nullable
 //            ^^^^^^ support.class
 //                   ^^^ keyword.operator.spread
