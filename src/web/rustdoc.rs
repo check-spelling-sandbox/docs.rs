@@ -2845,7 +2845,7 @@ mod test {
     }
 
     #[test_case("something.js")]
-    #[test_case("someting.css")]
+    #[test_case("something.css")]
     fn serve_release_specific_static_assets(name: &str) {
         async_wrapper(|env| async move {
             env.async_fake_release()
