@@ -1131,10 +1131,10 @@ public class Foo {
 //                                                      ^ constant.numeric.integer.decimal
 
 
-  private MyGenric<Param, With.Dots, With.Nested<Generic>, and.fully.Qualified,
-//                             ^ meta.generic.java support.class.java
-//                                       ^ meta.generic.java punctuation.accessor.dot.java
-//                                                         ^^^^^^^^^^^^^^^^^^^ meta.path.java
+  private MyGeneric<Param, With.Dots, With.Nested<Generic>, and.fully.Qualified,
+//                              ^ meta.generic.java support.class.java
+//                                        ^ meta.generic.java punctuation.accessor.dot.java
+//                                                          ^^^^^^^^^^^^^^^^^^^ meta.path.java
       and.fully.Qualified<Generic>> myVariable;
 //    ^^^^^^^^^^^^^^^^^^^ meta.path.java
 //                          ^ meta.generic.java meta.generic.java support.class.java
