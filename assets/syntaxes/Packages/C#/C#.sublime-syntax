@@ -587,7 +587,7 @@ contexts:
         1: variable.other.member.cs
       set: member_variables_declaration
     - match: '({{name}})?\s*(\()'
-      # here the name is optionnal since it may already have been match by
+      # here the name is optional since it may already have been match by
       # '{{name}}\s*(<)' (see rule below)
       captures:
         1: meta.method.cs entity.name.function.cs
