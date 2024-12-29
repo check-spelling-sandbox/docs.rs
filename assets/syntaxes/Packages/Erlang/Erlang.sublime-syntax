@@ -577,7 +577,7 @@ contexts:
           scope: punctuation.separator.expressions.erlang
           push:
             - - meta_content_scope: meta.field.name.erlang
-              - include: immediatelly-pop
+              - include: immediately-pop
             - - include: variable-anonymous-pop
               - match: '{{atom_unquoted}}'
                 scope: meta.atom.erlang entity.name.field.erlang
@@ -842,7 +842,7 @@ contexts:
       scope: keyword.declaration.function.erlang
       push:
         - - meta_scope: meta.fun.erlang
-          - include: immediatelly-pop
+          - include: immediately-pop
           # function reference (e.g.: FuncName = fun module:name/arity)
           # keyword `fun` followed by a `function-declaration` but without `end`.
         - - include: namespace-pop
@@ -920,7 +920,7 @@ contexts:
 
   function-meta:
     - meta_scope: meta.function.erlang
-    - include: immediatelly-pop
+    - include: immediately-pop
 
 ###[ FUNCTION CALL ]##########################################################
 
@@ -1204,7 +1204,7 @@ contexts:
       scope: meta.record.erlang punctuation.accessor.dot.erlang
       set:
         - - meta_content_scope: meta.record.field.erlang
-          - include: immediatelly-pop
+          - include: immediately-pop
         - - include: variable-other-field
           - include: eol-pop
     - match: \{
@@ -1216,7 +1216,7 @@ contexts:
           scope: punctuation.separator.expressions.erlang
           push:
             - - meta_content_scope: meta.field.name.erlang
-              - include: immediatelly-pop
+              - include: immediately-pop
             - - include: variable-anonymous-pop
               - include: variable-other-field
     - include: else-pop
@@ -1368,7 +1368,7 @@ contexts:
 
   namespace-meta:
     - meta_scope: meta.path.erlang
-    - include: immediatelly-pop
+    - include: immediately-pop
 
   namespace-member-other:
    - include: reference-pop
@@ -1376,7 +1376,7 @@ contexts:
    - include: atom-pop
    - include: macro-pop
    - include: variable-other-pop
-   - include: immediatelly-pop
+   - include: immediately-pop
 
   namespace-accessor:
     - match: ':'
@@ -1418,7 +1418,7 @@ contexts:
       scope: meta.reference.function.erlang punctuation.separator.reference.erlang
       set:
         - - meta_content_scope: meta.reference.function.arity.erlang
-          - include: immediatelly-pop
+          - include: immediately-pop
         - - match: \d+
             scope: constant.numeric.integer.decimal.erlang
             pop: true
@@ -2012,7 +2012,7 @@ contexts:
     - match: (?=->|when{{ident_break_char}})
       pop: true
 
-  immediatelly-pop:
+  immediately-pop:
     - match: ''
       pop: true
 
