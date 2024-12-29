@@ -250,7 +250,7 @@ contexts:
   flowtype-identifier:
     - include: support-class
     - match: \b(?:any|bool|boolean|mixed|number|string|void)\b
-      scope: constant.other.primitve.flowtype.js
+      scope: constant.other.primitive.flowtype.js
     - match: '[_$a-zA-Z][$\w]*'
       scope: variable.other.flowtype.js
     - match: \?
