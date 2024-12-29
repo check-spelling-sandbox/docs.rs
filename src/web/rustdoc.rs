@@ -2407,7 +2407,7 @@ mod test {
                 ]
             );
 
-            // test if target-redirect inludes path
+            // test if target-redirect includes path
             let releases_response = env
                 .web_app()
                 .await
