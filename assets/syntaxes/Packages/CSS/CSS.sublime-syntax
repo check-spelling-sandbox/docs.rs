@@ -783,7 +783,7 @@ contexts:
                 - include: literal-string
                 - match: '(?=(\s|\]))'
                   pop: true
-            - match: '(?:\s+([iI]))?'  # case insensitive flag
+            - match: '(?:\s+([iI]))?'  # case-insensitive flag
               captures:
                 1: keyword.other.css
             - match: '\]'

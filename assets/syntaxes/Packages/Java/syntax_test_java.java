@@ -1131,10 +1131,10 @@ public class Foo {
 //                                                      ^ constant.numeric.integer.decimal
 
 
-  private MyGenric<Param, With.Dots, With.Nested<Generic>, and.fully.Qualified,
-//                             ^ meta.generic.java support.class.java
-//                                       ^ meta.generic.java punctuation.accessor.dot.java
-//                                                         ^^^^^^^^^^^^^^^^^^^ meta.path.java
+  private MyGeneric<Param, With.Dots, With.Nested<Generic>, and.fully.Qualified,
+//                              ^ meta.generic.java support.class.java
+//                                        ^ meta.generic.java punctuation.accessor.dot.java
+//                                                          ^^^^^^^^^^^^^^^^^^^ meta.path.java
       and.fully.Qualified<Generic>> myVariable;
 //    ^^^^^^^^^^^^^^^^^^^ meta.path.java
 //                          ^ meta.generic.java meta.generic.java support.class.java
@@ -2185,14 +2185,14 @@ public class Bar {
     CombinedServerSpec vendorManagementServerSpec;
 //                                               ^ invalid.illegal.missing-parameter-end
 
-  public void strayParans() {
+  public void strayParens() {
 //                          ^ punctuation.section.block.begin.java
     foo.bar(hello(world);
 //                      ^ invalid.illegal.stray-terminator-end
   }
 //^ punctuation.section.block.end.java
 
-  public void strayParansInBlock() {
+  public void strayParensInBlock() {
 //                                 ^ punctuation.section.block.begin.java
     if (hello(world) {
 //                  ^ invalid.illegal
@@ -2202,7 +2202,7 @@ public class Bar {
     }
   }
 
-  public void strayParansInForLoop() {
+  public void strayParensInForLoop() {
 //                                   ^ punctuation.section.block.begin.java
     for (;; {
 //         ^ invalid.illegal
@@ -2211,7 +2211,7 @@ public class Bar {
   }
 //^ punctuation.section.block.end.java
 
-  public void strayParansInConstructor() {
+  public void strayParensInConstructor() {
 //                                       ^ punctuation.section.block.begin.java
     return new Foo(;
 //                 ^ invalid.illegal
@@ -2221,7 +2221,7 @@ public class Bar {
   private boolean missingSemiColonForStaticAssignment = true
 //                                                      ^^^^ meta.assignment.rhs.java
 
-  public void strayParansInConstructor() {
+  public void strayParensInConstructor() {
 //^^^^^^ meta.class.body.java storage.modifier.java - meta.assignment.rhs.java
 //            ^ meta.method.identifier.java entity.name.function.java
 //                                       ^ punctuation.section.block.begin.java
@@ -2231,7 +2231,7 @@ public class Bar {
   private boolean missingSemiColonForStaticAssignmentPackageProtected = true
 //                                                                      ^^^^ meta.assignment.rhs.java
 
-  void strayParansInConstructor() {
+  void strayParensInConstructor() {
 //^^^^ storage.type.void.java - meta.assignment.rhs.java
 //     ^ meta.method.identifier.java entity.name.function.java
 //                                ^ punctuation.section.block.begin.java

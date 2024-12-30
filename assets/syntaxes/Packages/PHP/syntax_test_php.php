@@ -222,7 +222,7 @@ $var = function(array $ar=array(), ClassName $cls) use ($var1, $var2) {
 };
 // <- meta.function meta.block punctuation.section.block.end
 
-function foo(?stinrg ...$args) {}
+function foo(?string ...$args) {}
 //           ^ storage.type.nullable
 //            ^^^^^^ support.class
 //                   ^^^ keyword.operator.spread
@@ -627,14 +627,14 @@ if ($foo instanceof \Mynamespace\ClassName) {
 //                               ^^^^^^^^^ support.class
 }
 
-$var = new \MyNamespce\ClassName();
+$var = new \MyNamespace\ClassName();
 // <- variable.other
 //     ^ keyword.other
-//         ^^^^^^^^^^^^^^^^^^^^^ meta.path
+//         ^^^^^^^^^^^^^^^^^^^^^^ meta.path
 //         ^ punctuation.separator.namespace
 //          ^ support.other.namespace
-//                    ^ punctuation.separator.namespace
-//                     ^ support.class
+//                     ^ punctuation.separator.namespace
+//                      ^ support.class
 
 \MyNamespace\Foo::BAR;
 // <- punctuation.separator.namespace
@@ -1242,10 +1242,10 @@ preg_replace('/[a-zSOME_CHAR]*+\'\n  $justTxt  \1  \\1/m');
 //                                                     ^ meta.regex.modifier
 //                                                      ^ string.quoted.single
 
-preg_replace("/[a-zSOME_CHAR]*+\'\n  $vairble  \1  \\1/m");
-//           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ string.quoted.double
+preg_replace("/[a-zSOME_CHAR]*+\'\n  $variable  \1  \\1/m");
+//           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ string.quoted.double
 //            ^ punctuation.definition.string.regex-delimiter.begin
-//             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.regexp
+//             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.regexp
 //             ^ punctuation.definition.character-class.begin.regexp
 //              ^^^ constant.other.character-class.range.regexp
 //                 ^^^^^^^^^ constant.other.character-class.set.regexp
@@ -1253,11 +1253,11 @@ preg_replace("/[a-zSOME_CHAR]*+\'\n  $vairble  \1  \\1/m");
 //                           ^^ keyword.operator.quantifier
 //                             ^^^^ constant.character.escape
 //                                   ^ punctuation.definition.variable
-//                                             ^^ constant.character.escape
-//                                                 ^^ constant.character.escape
-//                                                    ^ punctuation.definition.string.regex-delimiter.end
-//                                                     ^ meta.regex.modifier
-//                                                      ^ string.quoted.double
+//                                              ^^ constant.character.escape
+//                                                  ^^ constant.character.escape
+//                                                     ^ punctuation.definition.string.regex-delimiter.end
+//                                                      ^ meta.regex.modifier
+//                                                       ^ string.quoted.double
 
 preg_replace("/^(?=foo)|(?>a|b|\s*)|(?im:toggle)(?#comment)$/uxS");
 //            ^ punctuation.definition.string.regex-delimiter.begin

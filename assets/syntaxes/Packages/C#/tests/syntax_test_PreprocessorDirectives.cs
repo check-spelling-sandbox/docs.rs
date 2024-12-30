@@ -12,7 +12,7 @@ using System;
 #pragma warning restore warning-list
 #pragma checksum "file.cs" "{3673e4ca-6098-4ec1-890f-8fceb2a794a2}" "{012345678AB}" // New checksum
 //       ^ keyword.other.preprocessor
-//                 ^ stirng.quoted.double
+//                 ^ string.quoted.double
 //                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ constant.numeric.integer.hexadecimal
 
 #region
