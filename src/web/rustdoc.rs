@@ -2590,7 +2590,7 @@ mod test {
             );
             assert!(dom
                 .select(r#"a[href="/optional-dep/1.2.3"] > i[class="dependencies normal"] + i"#)
-                .expect("shoud have optional dependency")
+                .expect("should have optional dependency")
                 .any(|el| { el.text_contents().contains("optional") }));
             let dom = kuchikiki::parse_html().one(
                 env.web_app()
@@ -2604,7 +2604,7 @@ mod test {
                 .select(
                     r#"a[href="/crate/optional-dep/1.2.3"] > i[class="dependencies normal"] + i"#
                 )
-                .expect("shoud have optional dependency")
+                .expect("should have optional dependency")
                 .any(|el| { el.text_contents().contains("optional") }));
             Ok(())
         })
