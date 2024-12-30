@@ -340,7 +340,7 @@ contexts:
     - match: '$'
       pop: true
     - match: '.+'
-      # This also highlights trailing whitespece.  Although that is valid
+      # This also highlights trailing whitespace.  Although that is valid
       # TOML, it doesn't seem bad to me.  If that's annoying, change this
       # to '[^ \n]+'.
       scope: invalid.illegal.trailing.toml
