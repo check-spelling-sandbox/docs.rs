@@ -2410,7 +2410,7 @@
 		{ "trigger": "newt_label_set_text", "contents": "newt_label_set_text(${1:label}, ${2:text})" },
 		{ "trigger": "newt_listbox", "contents": "newt_listbox(${1:left}, ${2:top}, ${3:height})" },
 		{ "trigger": "newt_listbox_append_entry", "contents": "newt_listbox_append_entry(${1:listbox}, ${2:text}, ${3:data})" },
-		{ "trigger": "newt_listbox_clear", "contents": "newt_listbox_clear(${1:listobx})" },
+		{ "trigger": "newt_listbox_clear", "contents": "newt_listbox_clear(${1:listbox})" },
 		{ "trigger": "newt_listbox_clear_selection", "contents": "newt_listbox_clear_selection(${1:listbox})" },
 		{ "trigger": "newt_listbox_delete_entry", "contents": "newt_listbox_delete_entry(${1:listbox}, ${2:key})" },
 		{ "trigger": "newt_listbox_get_current", "contents": "newt_listbox_get_current(${1:listbox})" },
